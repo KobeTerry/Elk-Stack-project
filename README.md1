@@ -18,7 +18,6 @@ This document contains the following details:
 
 
 ### Description of the Topology
-
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly Availability, in addition to restricting in-bound to the network.
@@ -39,7 +38,6 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Elk-Server    |   Monitor Traffic       |     10.0.0.4       |    Linux              |
 
 ### Access Policies
-
 The machines on the internal network are not exposed to the public Internet.
 
 Only the Jumpbox Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
@@ -83,11 +81,7 @@ File beat is only pulling files from the file system. Metricbeat is collecting m
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
-
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
-Ansible playbook file to Ansible control node
-Hosts
-Kibana
+- Copy the Ansible playbook file to Ansible control node 
+- Update the Hosts file to include
+- Run the playbook, and navigate to Kibana to check that the installation worked as expected.
